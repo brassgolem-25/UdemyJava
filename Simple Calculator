@@ -1,0 +1,46 @@
+//create a new class named Simple Calculator and then calling this in the main method.
+//this file consists only of SimpleCalcualtor source file.
+
+package com.company;
+
+public class SimpleCalculator {
+    private double firstNumber;
+    private double secondNumber;
+
+    public void setFirstNumber(double firstNumber1) {
+        this.firstNumber = firstNumber1;
+    }
+
+    public void setSecondNumber(double secondNumber1) {
+        this.secondNumber = secondNumber1;
+    }
+
+    public double getFirstNumber() {
+        return firstNumber;
+    }
+
+    public double getSecondNumber() {
+        return secondNumber;
+    }
+
+    public double getAdditionResult() {
+        return ( firstNumber + secondNumber );
+    }
+    public double getSubtractionResult() {
+        return  ( secondNumber - firstNumber );
+    }
+    public double getMultiplicationResult() {
+        return ( secondNumber * firstNumber );
+    }
+    public double getDivisonResult() {
+        if(secondNumber==0){
+            return 0;
+        }
+        else {
+            return (firstNumber / secondNumber);
+        }
+
+    }
+}
+
+
